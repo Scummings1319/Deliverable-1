@@ -1,0 +1,112 @@
+/* Header, footer and background for ‘Detroit’ and ‘Grand Rapids’ #70a48b */
+/* #1f211c 'Navigation links' and ' Border on Three rectangles' */
+.green-background{
+    background-color: #70a48b;
+}
+
+body{
+    font-family: "Work Sans";
+    font-weight: 600;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    justify-content:space-between; 
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-links{
+    list-style: none;
+    width: 66%;
+    display: flex;
+    padding: 10px;
+    justify-content:space-around; 
+    flex-direction: row; 
+    align-items: center;
+     border: 2px solid azure;
+     border-radius: 10px;
+     color: azure;
+    }
+
+.black-background{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px
+}
+.info{
+    margin: 0px 5%;
+}
+.pets {
+    margin-bottom: 100px;
+}
+.images
+img{
+    width: 48%; 
+    /* padding: 10px; */
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.cities{
+    list-style-type: none;
+}
+.city{
+    background-color: #70a48b;
+    justify-content: space-between;
+    border:2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 12px 0px;
+    color: azure;
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.images{
+   display: flex;
+   flex-wrap: wrap;
+
+}
+footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height: 70px;
+    width:100%;
+    background: #70a48b;
+    padding: 10px;
+}
+#footer-logo{
+    height: 100%;
+}
+@media screen and (min-width:768px) {
+    body{
+        font-size: 140%;
+    }
+    header{
+        flex-direction: row;
+    }
+    #nav-links{
+        width:35%;
+    }
+    #main{
+        flex-direction: row;
+    }
+    .info{
+        max-width: 33%;
+    }
+    .pets{
+        max-width: 66%;
+    }
+    .images img{ 
+        width: 31%;
+        justify-content: space-evenly;
+    }
+}
